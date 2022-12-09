@@ -57,10 +57,7 @@ for url in url_given:
         print('The input are not link')
     else:
         pl_urls = get_playlist(url_given)
-        # TODO
-        #  Make a condition if file exist
-        #  create a new one
-        with open('YTPUGmusicUrls.txt','w') as f:
+        with open('YTPUG-MusicUrls.txt','w') as f:
             for url in pl_urls:
                 f.write(url+'\n')
         print("File successfully created with the urls into "+os.getcwd())
